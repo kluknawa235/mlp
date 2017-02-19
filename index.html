@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>Derpi-New Tab</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <style id="style"></style>
 </head>
 <body>
 
 <div id="settingsWrap">
-	<div id="MLP Episodes">
-		<header>Episodes</header>
+	<div id="settings">
+		<header>Settings</header>
         <ul class="collapsible" data-collapsible="accordion">
 		    <li id="tag-settings">
 				<div class="collapsible-header">Filtering</div>
@@ -73,6 +73,27 @@
 					</div>
 				</div>
 		    </li>
-		</body>
+        </ul>
+		<footer>Derpi-New Tab<span id="disp-version"></span><br>by <a href="https://github.com/SeinopSys">SeinopSys</a> &amp; <a href="https://github.com/ponydevs/Derpi-NewTab/graphs/contributors">contributors</a><br><a href="https://github.com/ponydevs/Derpi-NewTab">View source code</a></footer>
+	</div>
+</div>
+<!-- Main image element -->
+<div id="image"></div>
+<!-- Ghost image element (e.g. for "fit inside window" cropping option) -->
+<div id="image-ghost"></div>
+<!-- Contains elements that will face out on a timer -->
+<div id="fade-layer">
+	<div id="data" class="z-depth-2"></div>
+	<a id="show-settings-button" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">menu</i></a>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/LStorage.min.js"></script>
+<script src="js/dyntime.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="js/jquery.simplemarquee.js"></script>
+<script src="js/script.js"></script>
+
+</body>
 </html>
-	
